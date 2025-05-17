@@ -35,7 +35,7 @@ def gerar_plano_de_estudos(materias, tempo_disponivel, prioridade=None, observac
     - Dicas de como manter a motivação e evitar a procrastinação.
     - Adapte o plano de estudos com base na prioridade especificada (se fornecida).
 
-    Formate o plano de estudos de forma clara e organizada, com seções para cada dia ou bloco de tempo, as matérias a serem estudadas e as sugestões de métodos e recursos.
+    Formate o plano de estudos de forma clara e organizada, com seções para cada dia ou bloco de tempo, as matérias a serem estudadas e as sugestões de métodos e recursos. **Use Markdown para formatação (títulos com ##, listas com *, etc.).**
     '''
 
     # envia prompt para Gemini e pega a resposta
@@ -48,7 +48,9 @@ if __name__ == '__main__':
     prioridade = input("Qual a prioridade dos seus estudos? (opcional, deixe em branco se não houver): ")
     observacao = input("Alguma observação adicional para o plano de estudos? (opcional): ")
 
-    prompt_gerado = gerar_plano_de_estudos(materias, tempo_disponivel, prioridade, observacao)
-    print("\nPrompt Gerado:\n")
-    print(prompt_gerado)
-
+    print("\nGerando plano de estudos... aguarde um momento.\n")
+    plano_de_estudos = gerar_plano_de_estudos(materias, tempo_disponivel, prioridade, observacao)
+    print("\n--- Plano de Estudos Gerado pelo Gemini ---\n")
+    print(plano_de_estudos)
+    print("\n--- Fim do Plano de Estudos ---")
+    print("\nLembre-se de que este é um plano sugerido. Adapte-o às suas necessidades e ritmo de aprendizado.\n")
