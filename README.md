@@ -1,6 +1,6 @@
 # Assistente de Plano de Estudos Personalizado com Gemini AI
 
-Este projeto é um assistente inteligente que usa a tecnologia Gemini AI do Google para criar planos de estudos sob medida para você. Basta dizer o que você precisa estudar, quanto tempo tem disponível e, opcionalmente, suas prioridades e dificuldades. A IA cuidará do resto, sugerindo um cronograma com métodos de estudo e links úteis.
+Este projeto foi feito como desafio da Imersão IA da Alura, é um assistente inteligente que usa a tecnologia Gemini AI do Google para criar planos de estudos sob medida para você. Basta dizer o que você precisa estudar, quanto tempo tem disponível e, opcionalmente, suas prioridades e dificuldades. A IA cuidará do resto, sugerindo um cronograma com métodos de estudo e links úteis.
 
 ## Funcionalidades
 
@@ -32,14 +32,6 @@ Este projeto é um assistente inteligente que usa a tecnologia Gemini AI do Goog
 
 * `google-generativeai`: A biblioteca que permite a comunicação com a inteligência artificial do Google.
 * `python-dotenv`: Uma ferramenta para ajudar a usar a sua chave de API de forma segura.
-
-Se você ainda não instalou essas ferramentas, pode usar o seguinte comando no terminal (certifique-se de estar na pasta do projeto):
-
-```bash
-pip install -r requirements.txt
-```
-
-(O arquivo `requirements.txt` deve estar na pasta do projeto e conter os nomes das dependências).
 
 ## Notas
 
